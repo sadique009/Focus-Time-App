@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { TextInput } from 'react-native-paper';
-import { colors } from '../utils/colors';
 import {RoundedButton} from "../components/RoundedButton";
 import {spacing} from "../utils/sizes";
 
-export const Focus = () => {
+export const Focus = ({addSubject}) => {
   const [subject, setSubject] = useState(null);
 
   return (
